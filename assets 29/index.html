@@ -2,39 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project3</title>
   <link rel='stylesheet' href='styles2.css'>
 </head>
 <body>
   <main>
     <!--block 1 - HEADER --> 
-    <p>Cart - Customer Information - Shipping Method - Payment Method</p>
+    <header><p>Cart - Customer Information - Shipping Method - <b>Payment Method</b></p></header>
 
-    <!--block 2 - TOP_RIGHT (section) --> 
-    <p>Chocolate bar</p>
-    <p>$2.49</p>
-    <p>Sutotal</p>
-    <p>$4.98</p>
-    <p>Shipping</p>
-    <p>$3.00</p>
-    <p>Total</p>
-    <p>$7.98</p>
-
-    <!--block 3 - TOP_LEFT (section)--> 
-    <p>Payment information</p>
-    <p>CARD NUMBER</p>
-    <p>CARD HOLDER</p>
-    <p>EXR DATE</p>
-    <p>CVC</p>
-
-    <!--block 4 - DOWN (section)--> 
-    <p>Billing address</p>
-    <p>Same as the shipping address</p>
-    <p>Use a different billing address</p>
     
-    <!--block 5 - FOOTER --> 
-    <p>Return to shipping method</p>
-    <p>Complete order</p>
+    <div class='container'>
+      <!--block 2 - TOP_RIGHT (section) -->
+      <section class='Chocolate_bar'>
+        <p>Chocolate bar</p>
+        <p>$2.49</p>
+        <p>Subtotal</p> 
+        <p>$4.98</p>
+        <p>Shipping</p>
+        <p>$3.00</p>
+        <p>Total</p>
+        <p>$7.98</p>
+      </section>
+
+      <!--block 3 - TOP_LEFT (section)-->
+      <section class='Payment_inf'>
+        <p>Payment information</p>
+        <p>CARD NUMBER</p>
+        <p>CARD HOLDER</p>
+        <p>EXR DATE</p>
+        <p>CVC</p>
+      </section>
+    </div>
+
+    <div class='container-like'>
+      <!--block 4 - DOWN (section)-->
+      <section class='Billing_add'>
+        <p>Billing address</p>
+        <p>Same as the shipping address</p>
+        <p>Use a different billing address</p>
+      </section>
+    </div>
+    
+
+    <!--block 5 - FOOTER -->
+    <footer>
+      <p>Return to shipping method</p>
+      <p>Complete order</p>
+    </footer>
     
   </main>
 </body>
