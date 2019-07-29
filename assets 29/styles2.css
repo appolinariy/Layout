@@ -39,6 +39,7 @@ section{
     margin-bottom: 30px;
 }
 
+/* --------- Chocolate bar block */
 .Chocolate_bar{
     width: 40%;
     height: 250px;
@@ -74,11 +75,57 @@ section{
     text-align: right;
 }
 
+ /* --------- Payment_information block */
 .Payment_inf{
     width: 57%;
     margin-right: 3%;
 }
 
+form{
+    font-family: Calibri, sans-serif;
+    margin: 0 30px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-like{
+    display: flex;
+    flex-direction: column;
+    font-size: 10pt;
+    font-weight: bold;
+    color: rgb(160, 160, 160);
+}
+
+.block_for_3_forms{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.block_for_2_forms{
+    display: inline-flex;
+}
+label{
+    margin-bottom: 10px;
+}
+
+input{
+    border-radius: 5px;
+    height: 30px;
+    border: 1.2px solid rgb(213, 219, 221);
+    outline: none;
+}
+
+input.card_holder{
+    width: 60%;
+}
+
+input:focus{
+    border: 1.2px solid rgb(58, 58, 58);
+}
+
+/* --------- Billing address block */
 .container-like{
     display: flex;
     width: 90%;
@@ -90,7 +137,7 @@ section{
 }
 
 /* 2 size - Payment information - card holder & exp.date & cvc by inline direction */
-@media (max-width: 860px){
+@media (max-width: 850px){
     main{
         margin-left: 3%;
         margin-right: 3%;

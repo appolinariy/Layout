@@ -36,11 +36,29 @@
 
       <!--block 3 - TOP_LEFT (section)-->
       <section class='Payment_inf'>
-        <p>Payment information</p>
-        <p>CARD NUMBER</p>
-        <p>CARD HOLDER</p>
-        <p>EXR DATE</p>
-        <p>CVC</p>
+        <form method='post' action='form.php'>
+          <p style='font-size: 22pt; font-weight: bold;'>Payment information</p>
+          <div class='form-like'>
+            <label for='card_number'>CARD NUMBER</label>
+            <input type='text' name='card_number'>
+          </div>
+          <div class='block_for_3_forms'>
+            <div class='form-like' style='width: 60%; margin-right: 2%;'>
+              <label for='card_holder'>CARD HOLDER</label>
+              <input type='text' name='card_holder'>
+            </div>
+            <div class='block_for_2_forms' style='width: 38%'>
+              <div class='form-like' style='width: 47.5%;'>
+                <label for='exr_date'>EXR DATE</label>
+                <input type='text' name='exr_date'>
+              </div>
+              <div class='form-like' style='width: 47.5%; margin-left: 5%'>
+                <label for='cvc'>CVC</label>
+                <input type='text' name='cvc'>
+              </div>
+            </div>
+          </div>
+        </form>
       </section>
     </div>
 
