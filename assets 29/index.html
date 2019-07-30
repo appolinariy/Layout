@@ -39,21 +39,21 @@
           <p style='font-size: 22pt; font-weight: bold;'>Payment information</p>
           <div class='form-like'>
             <label class='text-label' for='card_number'>CARD NUMBER</label>
-            <input type='text' name='card_number'>
+            <input type='text' onkeyup="var wrongtext=/['A-z','А-я']/; if(wrongtext.test(this.value)) this.value=''" maxlength='19' name='card_number'>
           </div>
           <div class='block_for_3_forms'>
             <div class='form-like card_holder'>
               <label class='text-label' for='card_holder'>CARD HOLDER</label>
-              <input type='text' name='card_holder'>
+              <input type='text' onkeyup="var wrongtext=/['0-9']/; if(wrongtext.test(this.value)) this.value=''" maxlength='40' name='card_holder'>
             </div>
             <div class='block_for_2_forms'>
               <div class='form-like exr_date'>
                 <label class='text-label' for='exr_date'>EXR DATE</label>
-                <input type='text' name='exr_date'>
+                <input type='text' onkeyup="var wrongtext=/['A-z','А-я']/; if(wrongtext.test(this.value)) this.value=''" maxlength='5' name='exr_date'>
               </div>
               <div class='form-like cvc'>
                 <label class='text-label' for='cvc'>CVC</label>
-                <input type='text' name='cvc'>
+                <input type='text' onkeyup="var wrongtext=/['A-z','А-я']/; if(wrongtext.test(this.value)) this.value=''" maxlength='3' name='cvc'>
               </div>
             </div>
           </div>
@@ -80,8 +80,8 @@
 
     <!--block 5 - FOOTER -->
     <footer>
-      <p>Return to shipping method</p>
-      <p>Complete order</p>
+      <p class='Return'>Return to shipping method</p>
+      <p class='Complete'>Complete order</p>
     </footer>
     
   </main>

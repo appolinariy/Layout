@@ -22,7 +22,7 @@ main{
     flex-direction: column;
     margin-left: 8%;
     margin-right: 8%;
-    /* background-color: pink; */
+    height: 630px;
 }
 
 section{
@@ -127,6 +127,9 @@ input[type='text']{
     height: 30px;
     border: 1.2px solid rgb(213, 219, 221);
     outline: none;
+    font-size: 12pt;
+    font-family: Calibri, sans-serif;
+    padding-left: 5px;
 }
 
 .text-label{
@@ -198,7 +201,7 @@ input:focus{
     display: block;
     width: 10px;
     height: 10px;
-    background-color: #206dd1;
+    background-color: #2379e9;
     border-radius: 50%;
     opacity: 0; /* полностью прозрачный */
     position: absolute;
@@ -214,11 +217,45 @@ input:focus{
 
 /* ------------- конец этих диких кружочков */
 
+footer{
+    width: 51%;
+    height: 70px;
+    display: inline-flex;
+    margin: 0;
+    align-items: center;
+}
+
+.Return{
+    color: #2379e9;
+    width: 65%;
+}
+
+.Return:hover{
+    text-decoration: underline;
+}
+
+.Complete{
+    background-color: #2379e9;
+    margin-left: 20%;
+    width: 135px;
+    height: 28px;
+    border-radius: 5px;
+    color: white;
+    padding-top: 8px;
+    text-align: center;
+}
+
+.Complete:hover{
+    background-color: #3656be;
+    transition: 0.5s linear;
+}
+
 /* 2 size - Payment information - card holder & exp.date & cvc by inline direction */
 @media (max-width: 900px){
     main{
         margin-left: 3%;
         margin-right: 3%;
+        height: 930px;
     }
 
     .container{
@@ -247,6 +284,10 @@ input:focus{
     .Billing_add{
         width: 100%;
         height: 200px;
+    }
+
+    footer{
+        width: 100%;
     }
 }
 
