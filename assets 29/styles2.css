@@ -16,7 +16,6 @@ header b{
     color: black;
 }
 
-/* 1 size - Payment information - FULL SIZE OF SCREEN*/ 
 main{
     display: flex;
     flex-direction: column;
@@ -56,7 +55,29 @@ section{
     font-size: 11pt;
 }
 
+.pic-block{
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    width: 60px;
+}
+
+.notification{
+    width: 20px;
+    height: 18px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #2379e9;
+    color: white;
+    font-size: 9pt;
+    padding-top: 2px;
+    position: absolute;
+    margin-left: 45px;
+    
+}
+
 .pic{
+    margin: 19px 8px;
     width: 30px;
     height: 25px;
     padding: 10px 7px 10px 7px;
@@ -170,7 +191,7 @@ input:focus{
     position: relative;
 }
 
-/* ------- С этими кружочками какая-то дичь вообще, но они получились и у-р-а 
+/* ------- С этими кружочками (form type='radio') какая-то дичь вообще, но они получились и у-р-а 
 Просто стандартные кружочки нельзя редактировать - надо скрывать их блоки и делать свои (! ДИЧЬ !)*/
 
 .radio-input {
@@ -190,7 +211,7 @@ input:focus{
     border: 1.2px solid rgb(213, 219, 221);
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
-    position: absolute; /* расположен точно в родителе */
+    position: absolute;
     top: 0; /* расстояние от верха родителя */
     left: 0; /* расстояние слева от родителя */
     margin-left: 30px;
@@ -203,7 +224,7 @@ input:focus{
     height: 10px;
     background-color: #2379e9;
     border-radius: 50%;
-    opacity: 0; /* полностью прозрачный */
+    opacity: 0;
     position: absolute;
     top: 4.3px;
     left: 4.1px;
@@ -232,6 +253,7 @@ footer{
 
 .Return:hover{
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .Complete{
@@ -248,9 +270,10 @@ footer{
 .Complete:hover{
     background-color: #3656be;
     transition: 0.5s linear;
+    cursor: pointer;
 }
 
-/* 2 size - Payment information - card holder & exp.date & cvc by inline direction */
+/* 2 size - Payment information - card holder & exp.date & cvc - inline direction */
 @media (max-width: 900px){
     main{
         margin-left: 3%;
@@ -291,7 +314,7 @@ footer{
     }
 }
 
-/* 3 size - Payment information - only exp.date & cvc by inline direction */ 
+/* 3 size - Payment information - only exp.date & cvc - inline direction */ 
 @media (max-width: 650px){
     .container{
         display: flex;

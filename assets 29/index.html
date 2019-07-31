@@ -8,14 +8,15 @@
 </head>
 <body>
   <main>
-    <!--block 1 - HEADER --> 
     <header><p>Cart - Customer Information - Shipping Method - <b>Payment Method</b></p></header>
 
     <div class='container'>
-      <!--block 2 - TOP_RIGHT (section) -->
       <section class='Chocolate_bar'>
         <div class='price-row' style='border-bottom: 1.2px solid rgb(213, 219, 221); padding-top: 10px; height: 75px;'>
-          <img class='pic' src='img/order.jpg'>
+          <div class='pic-block'>
+            <p class='notification'>2</p>
+            <img class='pic' src='img/order.jpg'>
+          </div>
           <p class='name-operation' style='font-size: 13pt; width: 71%; margin-left: 20px;'>Chocolate bar</p>
           <p class='price'>$2.49</p>
         </div>
@@ -33,7 +34,6 @@
         </div>
       </section>
 
-      <!--block 3 - TOP_LEFT (section)-->
       <section class='Payment_inf'>
         <form method='post' action='form.php'>
           <p style='font-size: 22pt; font-weight: bold;'>Payment information</p>
@@ -62,7 +62,6 @@
     </div>
 
     <div class='container-like'>
-      <!--block 4 - DOWN (section)-->
       <section class='Billing_add'>
         <form method='post' action='form.php' style='margin: 0;'>
           <p style='font-size: 22pt; font-weight: bold; padding: 0 30px;'>Billing address</p>
@@ -78,7 +77,6 @@
       </section>
     </div>
 
-    <!--block 5 - FOOTER -->
     <footer>
       <p class='Return'>Return to shipping method</p>
       <p class='Complete'>Complete order</p>
