@@ -12,31 +12,31 @@
 
     <div class='container'>
       <section class='Chocolate_bar'>
-        <div class='price-row' style='border-bottom: 1.2px solid rgb(213, 219, 221); padding-top: 10px; height: 75px;'>
+        <div class='price-row picture'>
           <div class='pic-block'>
             <p class='notification'>2</p>
             <img class='pic' src='img/order.jpg'>
           </div>
-          <p class='name-operation' style='font-size: 13pt; width: 71%; margin-left: 20px;'>Chocolate bar</p>
+          <p class='name-operation like'>Chocolate bar</p>
           <p class='price'>$2.49</p>
         </div>
-        <div class='price-row' style='padding-top: 15px;'>
+        <div class='price-row subtotal'>
           <p class='name-operation'>Subtotal</p> 
-          <p class='price' style='font-size: 11pt;'>$4.98</p>
+          <p class='price subtotal'>$4.98</p>
         </div>
         <div class='price-row'>
           <p class='name-operation'>Shipping</p>
-          <p class='price' style='font-size: 11pt;'>$3.00</p>
+          <p class='price shipping'>$3.00</p>
         </div>
-        <div class='price-row' style='border-top: 1.2px solid rgb(213, 219, 221); padding-top: 20px; margin-top: 10px; margin-bottom: 20px;'>
+        <div class='price-row total'>
           <p class='name-operation'>Total</p>
-          <p class='price' style='font-size: 14pt;'>$7.98</p>
+          <p class='price total'>$7.98</p>
         </div>
       </section>
 
       <section class='Payment_inf'>
         <form method='post' action='form.php'>
-          <p style='font-size: 22pt; font-weight: bold;'>Payment information</p>
+          <p class='Payment-header'>Payment information</p>
           <div class='form-like'>
             <label class='text-label' for='card_number'>CARD NUMBER</label>
             <input type='text' onkeyup="var wrongtext=/['A-z','А-я']/; if(wrongtext.test(this.value)) this.value=''" maxlength='19' name='card_number'>
@@ -64,8 +64,8 @@
     <div class='container-like'>
       <section class='Billing_add'>
         <form method='post' action='form.php' style='margin: 0;'>
-          <p style='font-size: 22pt; font-weight: bold; padding: 0 30px;'>Billing address</p>
-          <div class='address-row' style='border-bottom: 1.2px solid rgb(213, 219, 221); padding-bottom: 20px;'>
+          <p class='Billing-header'>Billing address</p>
+          <div class='address-row first'>
             <input class='radio-input' type='radio' name='address' id='shipping'>
             <label class='radio-label' for='shipping'>Same as the shipping address</label>
           </div>

@@ -55,6 +55,23 @@ section{
     font-size: 11pt;
 }
 
+.price-row.picture{
+    border-bottom: 1.2px solid rgb(213, 219, 221);
+    padding-top: 10px;
+    height: 75px;
+}
+
+.price-row.subtotal{
+    padding-top: 15px;
+}
+
+.price-row.total{
+    border-top: 1.2px solid rgb(213, 219, 221);
+    padding-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
 .pic-block{
     display: flex;
     flex-direction: column;
@@ -91,15 +108,38 @@ section{
     height: 25px;
 }
 
+.name-operation.like{
+    font-size: 13pt;
+    width: 71%;
+    margin-left: 20px;
+}
+
 .price{
     width: 20%;
     text-align: right;
+}
+
+.price.subtotal{
+    font-size: 11pt;
+}
+
+.price.shipping{
+    font-size: 11pt;
+}
+
+.price.total{
+    font-size: 14pt;
 }
 
  /* --------- Payment_information block */
 .Payment_inf{
     width: 57%;
     margin-right: 3%;
+}
+
+.Payment-header{
+    font-size: 22pt;
+    font-weight: bold;
 }
 
 form{
@@ -166,6 +206,11 @@ input:focus{
 }
 
 /* --------- Billing address block */
+.Billing-header{
+    font-size: 22pt;
+    font-weight: bold;
+    padding: 0 30px;
+}
 .container-like{
     display: flex;
     width: 90%;
@@ -189,6 +234,11 @@ input:focus{
     padding-left: 30px;
     font-weight: bold;
     position: relative;
+}
+
+.address-row.first{
+    border-bottom: 1.2px solid rgb(213, 219, 221);
+    padding-bottom: 20px;
 }
 
 /* ------- С этими кружочками (form type='radio') какая-то дичь вообще, но они получились и у-р-а 
