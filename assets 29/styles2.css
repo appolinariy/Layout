@@ -1,3 +1,8 @@
+/* псевдокласс для переменной border */
+:root{
+    --main-color-border: 1.2px solid rgb(213, 219, 221);
+}
+
 body{
     background-color: rgb(251, 252, 253);
 }
@@ -56,7 +61,7 @@ section{
 }
 
 .price-row.picture{
-    border-bottom: 1.2px solid rgb(213, 219, 221);
+    border-bottom: var(--main-color-border);
     padding-top: 10px;
     height: 75px;
 }
@@ -66,7 +71,7 @@ section{
 }
 
 .price-row.total{
-    border-top: 1.2px solid rgb(213, 219, 221);
+    border-top: var(--main-color-border);
     padding-top: 20px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -100,7 +105,7 @@ section{
     padding: 10px 7px 10px 7px;
     border-radius: 6px;
     background-color: white;
-    border: 1.2px solid rgb(213, 219, 221);
+    border: var(--main-color-border);
 }
 
 .name-operation{
@@ -185,7 +190,7 @@ form{
 input[type='text']{
     border-radius: 5px;
     height: 30px;
-    border: 1.2px solid rgb(213, 219, 221);
+    border: var(--main-color-border);
     outline: none;
     font-size: 12pt;
     font-family: Calibri, sans-serif;
@@ -231,7 +236,7 @@ input:focus{
 }
 
 .address-row.first{
-    border-bottom: 1.2px solid rgb(213, 219, 221);
+    border-bottom: var(--main-color-border);
     padding-bottom: 20px;
 }
 
@@ -252,7 +257,7 @@ input:focus{
     display: block;
     width: 16px;
     height: 16px;
-    border: 1.2px solid rgb(213, 219, 221);
+    border: var(--main-color-border);
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
     position: absolute;
