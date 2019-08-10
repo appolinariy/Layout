@@ -34,7 +34,7 @@ section{
     display: flex;
     flex-direction: row-reverse;
     width: 90%;
-    height: 270px;
+    height: 270%;
     margin-bottom: 30px;
 }
 
@@ -173,8 +173,7 @@ form{
 }
 
 .block_for_3_forms{
-    display: flex;
-    flex-direction: row;
+    display: inline-flex;
     margin-top: 15px;
 }
 
@@ -211,14 +210,9 @@ input:focus{
     font-weight: bold;
     padding: 0 30px;
 }
-.container-like{
-    display: flex;
-    width: 90%;
-    height: 270px;
-}
 
 .Billing_add{
-    width: 57%;
+    width: 51.2%;
     height: 200px;
     display: flex;
     flex-direction: column;
