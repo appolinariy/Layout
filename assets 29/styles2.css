@@ -322,7 +322,7 @@ footer{
     main{
         margin-left: 3%;
         margin-right: 3%;
-        height: 930px;
+        height: 100%;
     }
 
     .container{
@@ -359,7 +359,7 @@ footer{
 }
 
 /* 3 size - Payment information - only exp.date & cvc - inline direction */ 
-@media (max-width: 650px){
+@media (max-width: 700px){
     .container{
         display: flex;
         flex-direction: column;
@@ -369,7 +369,7 @@ footer{
 
     .Payment_inf{
         width: 100%;
-        height: 350px;
+        height: 60%;
     }
 
     .block_for_3_forms{
@@ -395,5 +395,18 @@ footer{
     .form-like.cvc{
         width: 50%;
         margin-left: 5%
+    }
+
+    .Complete{
+        font-size: 11pt;
+    }
+}
+
+@media (max-width: 355px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 650px;
     }
 }
