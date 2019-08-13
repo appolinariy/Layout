@@ -3,12 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Loop 3 - Step 6</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css" />
+  <title>Project3</title>
+  <link rel='stylesheet' href='styles2.css'>
 </head>
 <body>
+  <main>
+    <header><p>Cart - Customer Information - Shipping Method - <b>Payment Method</b></p></header>
 
+    <div class='container'>
+      <section class='Chocolate_bar'>
+        <div class='price-row picture'>
+          <div class='pic-block'>
+            <p class='notification'>2</p>
+            <img class='pic' src='img/order.jpg'>
+          </div>
+          <p class='name-operation like'>Chocolate bar</p>
+          <p class='price'>$2.49</p>
+        </div>
+        <div class='price-row subtotal'>
+          <p class='name-operation'>Subtotal</p> 
+          <p class='price subtotal'>$4.98</p>
+        </div>
+        <div class='price-row'>
+          <p class='name-operation'>Shipping</p>
+          <p class='price shipping'>$3.00</p>
+        </div>
+        <div class='price-row total'>
+          <p class='name-operation'>Total</p>
+          <p class='price total'>$7.98</p>
+        </div>
+      </section>
+
+      <section class='Payment_inf'>
+        <form method='post' action='form.php'>
+          <p class='Payment-header'>Payment information</p>
+          <div class='form-like'>
+            <label class='text-label' for='card_number'>CARD NUMBER</label>
+            <input type='text' onkeyup="var wrongtext=/['A-z','А-я']/; if(wrongtext.test(this.value)) this.value=''" maxlength='19' name='card_number'>
+          </div>
+          <div class='block_for_3_forms'>
+            <div class='form-like card_holder'>
+              <label class='text-label' for='card_holder'>CARD HOLDER</label>
+              <input type='text' onkeyup="var wrongtext=/['0-9']/; if(wrongtext.test(this.value)) this.value=''" maxlength='40' name='card_holder'>
+            </div>
+            <div class='block_for_2_forms'>
+              <div class='form-like exr_date'>
+                <label class='text-label' for='exr_date'>EXR DATE</label>
+                <input type='text' onkeyup="var wrongtext=/['A-z','А-я']/; if(wrongtext.test(this.value)) this.value=''" maxlength='5' name='exr_date'>
+              </div>
+              <div class='form-like cvc'>
+                <label class='text-label' for='cvc'>CVC</label>
+                <input type='text' onkeyup="var wrongtext=/['A-z','А-я']/; if(wrongtext.test(this.value)) this.value=''" maxlength='3' name='cvc'>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+
+      <section class='Billing_add'>
+        <form method='post' action='form.php' style='margin: 0;'>
+          <p class='Billing-header'>Billing address</p>
+          <div class='address-row first'>
+            <input class='radio-input' type='radio' name='address' id='shipping'>
+            <label class='radio-label' for='shipping'>Same as the shipping address</label>
+          </div>
+          <div class='address-row'>
+            <input class='radio-input' type='radio' name='address' id='billing'>
+            <label class='radio-label' for='billing'>Use a different billing address</label>
+          </div>
+        </form>
+      </section>
+
+    <footer>
+      <p class='Return'>Return to shipping method</p>
+      <p class='Complete'>Complete order</p>
+    </footer>
+    
+  </main>
 </body>
 </html>
+

@@ -1,0 +1,417 @@
+/* псевдокласс для переменной border */
+:root{
+    --main-color-border: 1.2px solid rgb(213, 219, 221);
+}
+
+body{
+    background-color: rgb(251, 252, 253);
+}
+
+p{
+    font-family: Calibri, sans-serif;
+}
+
+header{
+    font-size: 12pt;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+header b{
+    color: black;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin-left: 8%;
+    margin-right: 8%;
+    height: 630px;
+}
+
+section{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(193, 193, 194);
+}
+
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 90%;
+    height: 270%;
+    margin-bottom: 30px;
+}
+
+/* --------- Chocolate bar block */
+.Chocolate_bar{
+    width: 40%;
+    height: 250px;
+}
+
+.price-row{
+    display: flex;
+    direction: row;
+    align-items: center;
+    height: 13%;
+    margin-right: 30px;
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 11pt;
+}
+
+.price-row.picture{
+    border-bottom: var(--main-color-border);
+    padding-top: 10px;
+    height: 75px;
+}
+
+.price-row.subtotal{
+    padding-top: 15px;
+}
+
+.price-row.total{
+    border-top: var(--main-color-border);
+    padding-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.pic-block{
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    width: 60px;
+}
+
+.notification{
+    width: 20px;
+    height: 18px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #2379e9;
+    color: white;
+    font-size: 9pt;
+    padding-top: 2px;
+    position: absolute;
+    margin-left: 45px;
+    
+}
+
+.pic{
+    margin: 19px 8px;
+    width: 30px;
+    height: 25px;
+    padding: 10px 7px 10px 7px;
+    border-radius: 6px;
+    background-color: white;
+    border: var(--main-color-border);
+}
+
+.name-operation{
+    width: 80%;
+    height: 25px;
+}
+
+.name-operation.like{
+    font-size: 13pt;
+    width: 71%;
+    margin-left: 20px;
+}
+
+.price{
+    width: 20%;
+    text-align: right;
+}
+
+.price.subtotal{
+    font-size: 11pt;
+}
+
+.price.shipping{
+    font-size: 11pt;
+}
+
+.price.total{
+    font-size: 14pt;
+}
+
+ /* --------- Payment_information block */
+.Payment_inf{
+    width: 57%;
+    margin-right: 3%;
+}
+
+.Payment-header{
+    font-size: 22pt;
+    font-weight: bold;
+}
+
+form{
+    font-family: Calibri, sans-serif;
+    margin: 0 30px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-like{
+    display: flex;
+    flex-direction: column;
+    font-size: 10pt;
+    font-weight: bold;
+    color: rgb(160, 160, 160);
+}
+
+.form-like.card_holder{
+    width: 60%;
+    margin-right: 2%;
+}
+
+.form-like.exr_date{
+    width: 47.5%;
+}
+
+.form-like.cvc{
+    width: 47.5%;
+    margin-left: 5%
+}
+
+.block_for_3_forms{
+    display: inline-flex;
+    margin-top: 15px;
+}
+
+.block_for_2_forms{
+    display: inline-flex;
+    width: 38%;
+}
+
+input[type='text']{
+    border-radius: 5px;
+    height: 30px;
+    border: var(--main-color-border);
+    outline: none;
+    font-size: 12pt;
+    font-family: Calibri, sans-serif;
+    padding-left: 5px;
+}
+
+.text-label{
+    margin-bottom: 10px;
+}
+
+input.card_holder{
+    width: 60%;
+}
+
+input:focus{
+    border: 1.2px solid rgb(58, 58, 58);
+}
+
+/* --------- Billing address block */
+.Billing-header{
+    font-size: 22pt;
+    font-weight: bold;
+    padding: 0 30px;
+}
+
+.Billing_add{
+    width: 51.2%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    font-family: Calibri, sans-serif;
+}
+
+.address-row{
+    display: inline-flex;
+    align-items: center;
+    height: 10%;
+    font-size: 11pt;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    font-weight: bold;
+    position: relative;
+}
+
+.address-row.first{
+    border-bottom: var(--main-color-border);
+    padding-bottom: 20px;
+}
+
+/* ------- С этими кружочками (form type='radio') какая-то дичь вообще, но они получились и у-р-а 
+Просто стандартные кружочки нельзя редактировать - надо скрывать их блоки и делать свои (! ДИЧЬ !)*/
+
+.radio-input {
+    display: none;
+}
+
+.radio-label {
+    padding-left: 30px;
+    cursor: pointer; /* курсор рука */
+}
+
+.radio-label:before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: var(--main-color-border);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    top: 0; /* расстояние от верха родителя */
+    left: 0; /* расстояние слева от родителя */
+    margin-left: 30px;
+}
+
+.radio-label:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #2379e9;
+    border-radius: 50%;
+    opacity: 0;
+    position: absolute;
+    top: 4.3px;
+    left: 4.1px;
+    transition: opacity .3s linear;
+    margin-left: 30px;
+}
+
+.radio-input:checked + .radio-label:after {
+    opacity: 1;
+}
+
+/* ------------- конец этих диких кружочков */
+
+footer{
+    width: 51%;
+    height: 70px;
+    display: inline-flex;
+    margin: 0;
+    align-items: center;
+}
+
+.Return{
+    color: #2379e9;
+    width: 65%;
+}
+
+.Return:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.Complete{
+    background-color: #2379e9;
+    margin-left: 20%;
+    width: 135px;
+    height: 28px;
+    border-radius: 5px;
+    color: white;
+    padding-top: 8px;
+    text-align: center;
+}
+
+.Complete:hover{
+    background-color: #3656be;
+    transition: 0.5s linear;
+    cursor: pointer;
+}
+
+/* 2 size - Payment information - card holder & exp.date & cvc - inline direction */
+@media (max-width: 900px){
+    main{
+        margin-left: 3%;
+        margin-right: 3%;
+        height: 100%;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 550px;
+    }
+
+    .Chocolate_bar{
+        width: 100%;
+        height: 250px;
+        margin-bottom: 30px;
+    }
+    
+    .Payment_inf{
+        width: 100%;
+        height: 350px;
+    }
+
+    .container-like{
+        display: flex;
+        width: 100%;
+    }
+
+    .Billing_add{
+        width: 100%;
+        height: 200px;
+    }
+
+    footer{
+        width: 100%;
+    }
+}
+
+/* 3 size - Payment information - only exp.date & cvc - inline direction */ 
+@media (max-width: 700px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 600px;
+    }
+
+    .Payment_inf{
+        width: 100%;
+        height: 60%;
+    }
+
+    .block_for_3_forms{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block_for_2_forms{
+        display: inline-flex;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .form-like.card_holder{
+        width: 100%;
+        margin-right: 2%;
+    }
+    
+    .form-like.exr_date{
+        width: 50%;
+    }
+    
+    .form-like.cvc{
+        width: 50%;
+        margin-left: 5%
+    }
+
+    .Complete{
+        font-size: 11pt;
+    }
+}
+
+@media (max-width: 355px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 650px;
+    }
+}
